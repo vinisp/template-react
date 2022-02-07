@@ -25,24 +25,20 @@ const CardSizes = styled("div")(({ theme }) => ({
   },
 }));
 
-const card = (
-  <>
-    <CardContent>
-      <Typography>+10 mil </Typography>
-      <Typography>usuários</Typography>
-      <Typography>1</Typography>
-    </CardContent>
-    <CardActions>
-      <Button size="small">Saiba Mais</Button>
-    </CardActions>
-  </>
-);
-
-function CardCustom() {
+function CardCustom(info1) {
   return (
     <>
       <CardSizes>
-        <Card sx={{ backgroundColor: "#c7def1" }}>{card}</Card>
+        <Card sx={{ backgroundColor: "#dcdcdc" }}>
+          <CardContent>
+            <Typography>1</Typography>
+            <Typography>2</Typography>
+            <Typography>3</Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Saiba Mais</Button>
+          </CardActions>
+        </Card>
       </CardSizes>
     </>
   );

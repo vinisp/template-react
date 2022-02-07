@@ -72,14 +72,7 @@ function Main() {
             border: "solid 2px white",
           }}
         >
-          <Typography
-            sx={{
-              fontSize: "3rem",
-            }}
-          >
-            {" "}
-            RESUMA COM QUATRO PALAVRAS
-          </Typography>
+          <Typography variant="h2">RESUMA COM QUATRO PALAVRAS</Typography>
           <Typography>
             Descreve um resumo com um texto breve de até 12 linhas, explicando
             de forma suscinta como os cursos funcionam e podem ajudar as pessoas
