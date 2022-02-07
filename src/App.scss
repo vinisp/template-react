@@ -7,6 +7,12 @@
   pointer-events: none;
 }
 
+.titleMain {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
