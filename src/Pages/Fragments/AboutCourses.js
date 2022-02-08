@@ -72,7 +72,7 @@ const BoxText = styled("div")(({ theme }) => ({
   },
 }));
 
-function Main() {
+function AboutCourses() {
   return (
     <>
       <Box
@@ -94,14 +94,14 @@ function Main() {
             color: "white",
 
             borderTop: "solid 1px white",
-            borderRight: "solid 1px white",
+            borderLeft: "solid 1px white",
             gap: 5,
           }}
         >
           <ThemeProvider theme={theme}>
-            <Typography variant="h2"> LOCAL PARA INFORMAR DADOS </Typography>
+            <Typography variant="h2"> SOBRE OS CURSOS - ROBOS </Typography>
             <Typography variant="subtitle1">
-              PODEMOS INCLUIR UM OU MAIS GRÁFICOS
+              PODEMOS INCLUIR TÓPICOS SOBRE OS CURSOS
             </Typography>
             <Button size="large" variant="outlined">
               Contrate já !
@@ -113,4 +113,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default AboutCourses;

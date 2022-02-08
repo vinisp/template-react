@@ -1,6 +1,8 @@
 import Hero from "../Fragments/Hero";
 import ResultSection from "../Fragments/Result-Section";
 import Main from "../Fragments/Main";
+import PlanosSection from "../Fragments/PlanosSection";
+import AboutCourses from "../Fragments/AboutCourses";
 
 import Grid from "@mui/material/Grid";
 
@@ -16,6 +18,12 @@ function Home() {
         </Grid>
         <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
           <Main />
+        </Grid>
+        <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
+          <PlanosSection />
+        </Grid>
+        <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
+          <AboutCourses />
         </Grid>
       </Grid>
     </>

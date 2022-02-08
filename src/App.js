@@ -1,13 +1,12 @@
 import "./App.scss";
-import Nav from "./Components/Nav";
 import Home from "./Pages/Complete/Home";
+import Nav from "./Components/Nav";
 
 function App() {
   return (
     <>
       <div className="App">
-        <Nav></Nav>
-
+        <Nav />
         <Home />
       </div>
     </>

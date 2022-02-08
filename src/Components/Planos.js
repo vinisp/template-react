@@ -7,35 +7,37 @@ import { styled } from "@mui/material/styles";
 const CardSizes = styled("div")(({ theme }) => ({
   padding: theme.spacing(1),
   [theme.breakpoints.down("sm")]: {
-    height: "200px",
+    height: "450px",
     width: "95%",
   },
   [theme.breakpoints.up("sm")]: {
-    height: "200px",
+    height: "450px",
     width: "80%",
   },
 
   [theme.breakpoints.up("md")]: {
-    height: "200px",
+    height: "450px",
     width: "30%",
   },
   [theme.breakpoints.up("lg")]: {
-    height: "200px",
+    height: "650px",
     width: "20%",
   },
 }));
 
-function CardCustom(info) {
+function Planos(info) {
   return (
     <>
       <CardSizes>
-        <Card sx={{ backgroundColor: "#dcdcdc" }}>
-          <CardContent>
-            <Typography>{info.number}</Typography>
+        <Card sx={{ backgroundColor: "#c7def1", height: "100%" }}>
+          <CardContent sx={{ background: "#001d35", height: "10%" }}>
+            <Typography sx={{ fontSize: "2rem", color: "white" }}>
+              {info.number}
+            </Typography>
+          </CardContent>
+          <CardActions sx={{ display: "flex", flexDirection: "column" }}>
             <Typography>{info.name}</Typography>
             <Typography>{info.stats}</Typography>
-          </CardContent>
-          <CardActions>
             <Button size="small">Saiba mais</Button>
           </CardActions>
         </Card>
@@ -44,4 +46,4 @@ function CardCustom(info) {
   );
 }
 
-export default CardCustom;
+export default Planos;

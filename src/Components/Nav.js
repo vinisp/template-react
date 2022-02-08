@@ -1,7 +1,11 @@
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
 function Nav() {
   return (
     <>
-      <nav>Navigator</nav>
+      <Router>
+        <Link> </Link>
+      </Router>
     </>
   );
 }

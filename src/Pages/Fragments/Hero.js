@@ -2,6 +2,8 @@ import { styled, ThemeProvider, createTheme } from "@mui/material/styles";
 
 import { Typography, Box, Button } from "@mui/material";
 
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
 const theme = createTheme({
   typography: {
     fontFamily: "Open Sans, sans-serif",
@@ -99,49 +101,54 @@ const BoxImg = styled("div")(({ theme }) => ({
 function Hero() {
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexWrap: "wrap",
-          gap: 2,
-          width: "100%",
-        }}
-      >
-        <BoxText
+      <Router>
+        <Box
           sx={{
             display: "flex",
-            alignItems: "center",
             justifyContent: "center",
-            flexDirection: "column",
-            color: "white",
-            borderLeft: "solid 1px white",
-            borderBottom: "solid 1px white",
-            gap: 5,
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: 2,
+            width: "100%",
           }}
         >
-          <ThemeProvider theme={theme}>
-            <Typography variant="h1"> RESUMA COM QUATRO PALAVRAS</Typography>
-            <Typography variant="subtitle1">
-              Faça um resumo com um texto breve, explicando de forma suscinta
-              como os cursos funcionam e podem ajudar as pessoas a obterem
-              resultados, aqui a venda começa! Faça um resumo com um texto
-              breve, explicando de forma suscinta como os cursos funcionam e
-              podem ajudar as pessoas a obterem resultados, aqui a venda começa!
-              Faça um resumo com um texto breve, explicando de forma suscinta
-              como os cursos funcionam e podem ajudar as pessoas a obterem
-              resultados, aqui a venda começa!
-            </Typography>
-            <Button size="large" variant="outlined">
-              Contrate já !
-            </Button>
-          </ThemeProvider>
-        </BoxText>
-        <BoxImg sx={{ border: "solid 2px white", color: "white" }}>
-          iLUSTRAÇÃO
-        </BoxImg>
-      </Box>
+          <BoxText
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              color: "white",
+              borderLeft: "solid 1px white",
+              borderBottom: "solid 1px white",
+              gap: 5,
+            }}
+          >
+            <ThemeProvider theme={theme}>
+              <Typography variant="h1"> RESUMA COM QUATRO PALAVRAS</Typography>
+              <Typography variant="subtitle1">
+                Faça um resumo com um texto breve, explicando de forma suscinta
+                como os cursos funcionam e podem ajudar as pessoas a obterem
+                resultados, aqui a venda começa! Faça um resumo com um texto
+                breve, explicando de forma suscinta como os cursos funcionam e
+                podem ajudar as pessoas a obterem resultados, aqui a venda
+                começa! Faça um resumo com um texto breve, explicando de forma
+                suscinta como os cursos funcionam e podem ajudar as pessoas a
+                obterem resultados, aqui a venda começa!
+              </Typography>
+
+              <Link to="/contratar">
+                <Button size="large" variant="outlined">
+                  Contrate já !
+                </Button>
+              </Link>
+            </ThemeProvider>
+          </BoxText>
+          <BoxImg sx={{ border: "solid 2px white", color: "white" }}>
+            iLUSTRAÇÃO
+          </BoxImg>
+        </Box>
+      </Router>
     </>
   );
 }

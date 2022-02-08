@@ -12,10 +12,10 @@ function ResultSection() {
           justifyContent: "center",
         }}
       >
-        <CardCustom />
-        <CardCustom />
-        <CardCustom />
-        <CardCustom />
+        <CardCustom number="+10 milions" name="users" stats="active" />
+        <CardCustom number="+60 milions" name="dolar's" stats="gain" />
+        <CardCustom number="+60 milions" name="dolar's" stats="gain" />
+        <CardCustom number="+60 milions" name="dolar's" stats="gain" />
       </Box>
     </>
   );
