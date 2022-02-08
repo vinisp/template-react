@@ -125,7 +125,7 @@ function Hero() {
             }}
           >
             <ThemeProvider theme={theme}>
-              <Typography variant="h1"> RESUMA COM QUATRO PALAVRAS</Typography>
+              <Typography variant="h1"> TÍTULO COM RESUMO BREVE</Typography>
               <Typography variant="subtitle1">
                 Faça um resumo com um texto breve, explicando de forma suscinta
                 como os cursos funcionam e podem ajudar as pessoas a obterem
@@ -138,7 +138,7 @@ function Hero() {
               </Typography>
 
               <Link to="/contratar">
-                <Button size="large" variant="outlined">
+                <Button size="large" variant="outlined" color="secondary">
                   Contrate já !
                 </Button>
               </Link>
